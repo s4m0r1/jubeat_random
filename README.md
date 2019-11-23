@@ -20,3 +20,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## 環境変数
+
+|環境変数名|説明|
+|:--|:-:|
+|SONGJSONURL|楽曲リストのJSONファイルのURL指定|
