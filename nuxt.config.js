@@ -1,9 +1,10 @@
 const colors = require('vuetify/es5/util/colors').default
-require('dotenv').config();
-const {SONGJSONURL} = process.env;
+const environment = process.env.NODE_ENV || 'development';
+const envSet = require(`./env.${environment}.js`)
+
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -38,7 +39,7 @@ module.exports = {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify'
   ],
   /*
@@ -85,7 +86,8 @@ module.exports = {
     extend (config, ctx) {
     }
   },
-  env: {
-    SONGJSONURL
-  },
+  env: envSet,
+  server: {
+    host: '0.0.0.0'
+  }
 }

@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# 環境変数ファイル
+env*
+!.env.sample.js

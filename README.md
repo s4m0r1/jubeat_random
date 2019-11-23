@@ -1,28 +1,26 @@
 # jubeat_random
 
-> My superb Nuxt.js project
+## インストール方法
 
-## Build Setup
+`npm install`
 
-``` bash
-# install dependencies
-$ npm run install
+## ビルド
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### 開発環境
+`npm run dev`
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+### ステージング環境&本番環境
+`npm run build:{環境}`
 
-# generate static project
-$ npm run generate
-```
+`npm run generate`
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## テスト
+`npm run lint`
 
 ## 環境変数
 
 |環境変数名|説明|
 |:--|:-:|
 |SONGJSONURL|楽曲リストのJSONファイルのURL指定|
+
+
