@@ -5,7 +5,7 @@
   "author": "s4m0r1",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "build:stg": "cross-env NODE_ENV=\"staging\" nuxt build",
     "build:prod": "cross-env NODE_ENV=\"production\" nuxt build",
@@ -21,12 +21,12 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "cross-env": "^5.2.1",
     "express": "^4.16.4",
     "hard-source-webpack-plugin": "^0.13.1",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/vuetify": "^1.0.0",
