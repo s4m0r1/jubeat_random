@@ -1,6 +1,8 @@
 const colors = require('vuetify/es5/util/colors').default
 require('dotenv').config();
 const {SONGJSONURL} = process.env;
+const environment = process.env.NODEENV || "development";
+const envSet = require(`./env.${environment}.js`)
 
 module.exports = {
   mode: 'spa',
@@ -86,6 +88,8 @@ module.exports = {
     }
   },
   env: {
+    env: envSet,
+    mode: "universal",
     SONGJSONURL
   },
 }
