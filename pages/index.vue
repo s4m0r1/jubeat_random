@@ -1,11 +1,5 @@
 <template>
-  <p>clear</p>
+  <div>
+    <p>DEVELOP</p>
+  </div>
 </template>
-
-<script>
-export default {
-  created() {
-    console.log(process.env.SONGJSONURL)
-  }
-}
-</script>

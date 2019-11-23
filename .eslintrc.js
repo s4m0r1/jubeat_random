@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    indent: [error, "tab"],
     browser: true,
     node: true
   },
