@@ -92,3 +92,4 @@ sw.*
 # 環境変数ファイル
 env*
 !.env.sample.js
+song_list.json
