@@ -1,6 +1,6 @@
 const colors = require('vuetify/es5/util/colors').default
 const environment = process.env.NODE_ENV || 'development';
-const envSet = require(`./env.${environment}.js`)
+// const envSet = require(`./env.${environment}.js`)
 
 
 module.exports = {
